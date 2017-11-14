@@ -1,0 +1,13 @@
+<form (submit)="loginUser()">
+  <div class="input">
+    <label>Username</label>
+    <input [(ngModel)]="user.name"  [ngModelOptions]="{standalone: true}" type="text">
+  </div>
+  <div class="input">
+    <label>Password</label>
+    <input [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password">
+  </div>
+  <div class="input">
+    <input type="submit" value="Login">
+  </div>
+</form>
